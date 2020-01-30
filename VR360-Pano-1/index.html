@@ -34,10 +34,10 @@
 	      return bInvalidBrowser;
 	}
 
-    $("#panoTitle").text('Vectorworks 360 Panorama');
+    $("#panoTitle").text('360 Panorama');
 
   	if (window.location.href.indexOf("file://") > -1 && isInvalidLocalBrowser()){
-  		$('#helpTxt').text('The Vectorworks Panorama Viewer is not supported locally in this browser. Please view this local panorama in Firefox, Safari, or another supported browser.');
+  		$('#helpTxt').text('The Panorama Viewer is not supported locally in this browser. Please view this local panorama in Firefox, Safari, or another supported browser.');
   		$('#helpTxt').css({"display" : "inline"});
   		$('#scene').css({"display": "none"});
   		$('#msgModal').modal("toggle");

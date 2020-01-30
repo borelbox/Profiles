@@ -9,7 +9,10 @@
     <style>
     #panorama {
         max-width: 100%;
+        /*max-height: 100%;*/
+        /*width: 800px;*/
         height: 400px;
+        margin: auto;
     }
     </style>
 </head>
@@ -26,57 +29,63 @@ pannellum.viewer('panorama', {
 
     "scenes": {
         "V1": {
-            "title": "Lines",
+            "title": "• Lines",
             "hfov": 120,
-            "pitch": 0,
-            "yaw": 5,
+            "pitch": 10,
+            "yaw": 0,
             "type": "equirectangular",
             "panorama": "https://borelbox.github.io/site/VR360/images/Pano_A.jpg",
             "hotSpots": [
                 {
-                    "pitch": 0,
-                    "yaw": 5,
+                    "pitch": 7,
+                    "yaw": 0,
                     "type": "scene",
-                    "text": "Pencil Sketch view",
-                    "sceneId": "V2"
+                    "text": "Pencil Sketch",
+                    "sceneId": "V2",
+                    "targetPitch": 10,
+                    "targetYaw": 0
                 }
             ]
         },
 
         "V2": {
-            "title": "Sketch",
-            "hfov": 130,
-            "yaw": 5,
+            "title": "• Sketch",
+            "hfov": 120,
+            "pitch": 10,
+            "yaw": 0,
             "type": "equirectangular",
             "panorama": "https://borelbox.github.io/site/VR360/images/Pano_B.jpg",
             "hotSpots": [
                 {
-                    "pitch": 0,
-                    "yaw": 5,
+                    "pitch": 7,
+                    "yaw": 0,
                     "type": "scene",
-                    "text": "Color view",
+                    "text": "Color",
                     "sceneId": "V3",
-                    "targetYaw": 5,
-                    "targetPitch": 0
+                    "targetPitch": 10,
+                    "targetYaw": 0
+                    
                 }
             ]
         },
 
         "V3": {
-            "title": "Color",
-            "hfov": 140,
-            "yaw": 5,
+            "title": "• Color",
+            "hfov": 120,
+            "pitch": 10,
+            "yaw": 0,
             "type": "equirectangular",
             "panorama": "https://borelbox.github.io/site/VR360/images/Pano_C.jpg",
             "hotSpots": [
                 {
-                    "pitch": 0,
-                    "yaw": 5,
+                    "pitch": 7,
+                    "yaw": 0,
                     "type": "scene",
-                    "text": "Lines view",
+                    "text": "Lines",
                     "sceneId": "V1",
-                    "targetYaw": 5,
-                    "targetPitch": 0
+                    "targetPitch": 10,
+                    "targetYaw": 0
+                    
                 }
             ]
         }

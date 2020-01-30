@@ -3,13 +3,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tour</title>
+    <title>Fiat 100 birthday's Virtual Tour</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.4/build/pannellum.css"/>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.4/build/pannellum.js"></script>
     <style>
     #panorama {
         width: 800px;
         height: 400px;
+        margin: auto;
     }
     </style>
 </head>
@@ -19,33 +20,33 @@
 <script>
 pannellum.viewer('panorama', {   
     "default": {
-        "firstScene": "Pano1",
+        "firstScene": "Fiat100 V1",
         "author": "Guille Borel",
         "sceneFadeDuration": 1000
     },
 
     "scenes": {
         "Pano1": {
-            "title": "Panorama-1",
-            "hfov": 110,
+            "title": "View 1",
+            "hfov": 90,
             "pitch": 0,
             "yaw": 5,
             "type": "equirectangular",
             "panorama": "https://borelbox.github.io/site/VR360/images/Pano_A.jpg",
             "hotSpots": [
                 {
-                    "pitch": 0,
+                    "pitch": -1,
                     "yaw": 5,
                     "type": "scene",
-                    "text": "Panorama-2",
-                    "sceneId": "Pano2"
+                    "text": "View 2",
+                    "sceneId": "V2"
                 }
             ]
         },
 
         "Pano2": {
-            "title": "Panorama-2",
-            "hfov": 110,
+            "title": "View 2",
+            "hfov": 100,
             "yaw": 5,
             "type": "equirectangular",
             "panorama": "https://borelbox.github.io/site/VR360/images/Pano_B.jpg",
@@ -54,29 +55,29 @@ pannellum.viewer('panorama', {
                     "pitch": 0,
                     "yaw": 5,
                     "type": "scene",
-                    "text": "Panorama-3",
-                    "sceneId": "Pano3",
-                    "targetYaw": 5,
+                    "text": "View 3",
+                    "sceneId": "V3",
                     "targetPitch": 0
+                    "targetYaw": 5,
                 }
             ]
         },
 
         "Pano3": {
-            "title": "Panorama-3",
+            "title": "View 3",
             "hfov": 110,
             "yaw": 5,
             "type": "equirectangular",
             "panorama": "https://borelbox.github.io/site/VR360/images/Pano_C.jpg",
             "hotSpots": [
                 {
-                    "pitch": 0,
+                    "pitch": 1,
                     "yaw": 5,
                     "type": "scene",
-                    "text": "Panorama-1",
-                    "sceneId": "Pano1",
-                    "targetYaw": 5,
+                    "text": "View 1",
+                    "sceneId": "V1",
                     "targetPitch": 0
+                    "targetYaw": 5,
                 }
             ]
         }

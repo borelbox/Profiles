@@ -22,9 +22,14 @@
 <script>
 pannellum.viewer('panorama', {   
     "default": {
-        "firstScene": "V1",
+        "firstScene": "V2",
         "author": "Guille Borel",
-        "sceneFadeDuration": 1000
+        "sceneFadeDuration": 2000,
+        "showFullscreenCtrl": true,
+        "autoLoad": true,
+        "autoRotate": -1,
+        "autoRotateInactivityDelay": 10000,
+        "orientationOnByDefault": true,
     },
 
     "scenes": {
@@ -42,8 +47,22 @@ pannellum.viewer('panorama', {
                     "type": "scene",
                     "text": "Pencil Sketch",
                     "sceneId": "V2",
-                    "targetPitch": 10,
-                    "targetYaw": 0
+                    // "targetPitch": 10,
+                    // "targetYaw": 0
+                },
+                {
+                    "pitch": 12,
+                    "yaw": 158,
+                    "type": "scene",
+                    "text": "Reception A",
+                    // "sceneId": "V2",
+                },
+                {
+                    "pitch": 6,
+                    "yaw": 244,
+                    "type": "scene",
+                    "text": "Reception B",
+                    // "sceneId": "V2",
                 }
             ]
         },
@@ -55,6 +74,9 @@ pannellum.viewer('panorama', {
             "yaw": 0,
             "type": "equirectangular",
             "panorama": "https://borelbox.github.io/site/VR360/images/Pano_B.jpg",
+
+            "fallback": "https://photos.google.com/share/AF1QipNh62ARNOdNhmuPTIa207qs7vQvRttzDJawlwTiHGCp6kssKEHmA1fq58_eLdTh-g/photo/AF1QipNhvFIBeRc0Vq4-18mcA9-FOP9bVm8c1SKeH-U6?key=eFZtQUJVYWhQWWViV29ZTUhmTnk2T2x6SElfSFV3",
+            
             "hotSpots": [
                 {
                     "pitch": 7,
@@ -62,9 +84,13 @@ pannellum.viewer('panorama', {
                     "type": "scene",
                     "text": "Color",
                     "sceneId": "V3",
-                    "targetPitch": 10,
-                    "targetYaw": 0
-                    
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 165,
+                    "type": "scene",
+                    "text": "Reception A",
+                    // "sceneId": "V2",
                 }
             ]
         },
@@ -83,10 +109,14 @@ pannellum.viewer('panorama', {
                     "type": "scene",
                     "text": "Lines",
                     "sceneId": "V1",
-                    "targetPitch": 10,
-                    "targetYaw": 0
-                    
-                }
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 165,
+                    "type": "scene",
+                    "text": "Reception A",
+                    // "sceneId": "V2",
+                }                
             ]
         }
     }

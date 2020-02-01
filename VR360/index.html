@@ -30,7 +30,7 @@ pannellum.viewer('panorama', {
         "autoRotate": -1,
         "autoRotateInactivityDelay": 10000,
         "orientationOnByDefault": true,
-        // "fallback": "https://photos.google.com/share/AF1QipNh62ARNOdNhmuPTIa207qs7vQvRttzDJawlwTiHGCp6kssKEHmA1fq58_eLdTh-g/photo/AF1QipNhvFIBeRc0Vq4-18mcA9-FOP9bVm8c1SKeH-U6?key=eFZtQUJVYWhQWWViV29ZTUhmTnk2T2x6SElfSFV3",
+        "fallback": "https://photos.google.com/share/AF1QipNh62ARNOdNhmuPTIa207qs7vQvRttzDJawlwTiHGCp6kssKEHmA1fq58_eLdTh-g/photo/AF1QipNhvFIBeRc0Vq4-18mcA9-FOP9bVm8c1SKeH-U6?key=eFZtQUJVYWhQWWViV29ZTUhmTnk2T2x6SElfSFV3",
     },
 
     "scenes": {
@@ -43,41 +43,34 @@ pannellum.viewer('panorama', {
             "panorama": "https://borelbox.github.io/site/VR360/img/Pan4K-Cam1-NCYT.jpg",
             "ignoreGPanoXMP": true,
             "hotSpots": [
-                // {
-                //     "pitch": 7,
-                //     "yaw": 0,
-                //     "type": "scene",
-                //     "text": "Color",
-                //     "sceneId": "Cam1C",
-                //     "targetPitch": "same",
-                //     "targetYaw": "same",
-                // },
-                // {
-                //     "pitch": 7,
-                //     "yaw": 10,
-                //     "type": "info",
-                //     "text": "borelbox@gmail.com",
-                //     "URL": "mailto:borelbox@gmail.com",
-                // },
-                // {
-                //     "pitch": 12,
-                //     "yaw": 158,
-                //     "type": "info",
-                //     "text": "Reception A (WIP)",
-                //     // "sceneId": "V2",
-                // },
+                {
+                    "pitch": -80,
+                    "yaw": 0,
+                    "type": "scene",
+                    "text": "Go Color",
+                    "sceneId": "Cam1C",
+                    "targetPitch": "same",
+                    "targetYaw": "same",
+                },
+                {
+                    "pitch": 7,
+                    "yaw": 5,
+                    "type": "info",
+                    "text": "borelbox@gmail.com",
+                    "URL": "mailto:borelbox@gmail.com",
+                },
                 {
                     "pitch": 12,
                     "yaw": 158,
                     "type": "scene",
-                    "text": "Cam2W",
+                    "text": "Cam 2",
                     "sceneId": "Cam2W",
                 },
                 {
                     "pitch": 6,
-                    "yaw": 244,
+                    "yaw": 242,
                     "type": "scene",
-                    "text": "Cam3W",
+                    "text": "Cam 3",
                     "sceneId": "Cam3W",
                 }
             ]
@@ -87,37 +80,46 @@ pannellum.viewer('panorama', {
             "title": "• Sketch",
             "hfov": 120, //50-120
             "pitch": 2,
-            "yaw": 0,
+            "yaw": 180,
             "type": "equirectangular",
             "panorama": "https://borelbox.github.io/site/VR360/img/Pan4K-Cam2-NCYT.jpg",
             "ignoreGPanoXMP": true,
             "hotSpots": [
                 {
-                    "pitch": 0,
+                    "pitch": -80,
                     "yaw": 0,
                     "type": "scene",
-                    "text": "Cam1W",
+                    "text": "Go Color",
+                    "sceneId": "Cam2C",
+                    "targetPitch": "same",
+                    "targetYaw": "same",
+                },
+                {
+                    "pitch": -10,
+                    "yaw": 170,
+                    "type": "scene",
+                    "text": "Cam 1",
                     "sceneId": "Cam1W",
                 },
                 {
-                    "pitch": 0,
-                    "yaw": 100,
+                    "pitch": 5,
+                    "yaw": 85,
                     "type": "scene",
-                    "text": "Cam3W",
+                    "text": "Cam 3",
                     "sceneId": "Cam3W",
                 },
                 {
-                    "pitch": 0,
-                    "yaw": 200,
+                    "pitch": 5,
+                    "yaw": -79,
                     "type": "scene",
-                    "text": "Cam4W",
+                    "text": "Cam 4",
                     "sceneId": "Cam4W",
                 },
                 {
-                    "pitch": 0,
-                    "yaw": 300,
+                    "pitch": -10,
+                    "yaw": 0,
                     "type": "scene",
-                    "text": "Cam5W",
+                    "text": "Cam 5",
                     "sceneId": "Cam5W",
                 }
             ]
@@ -126,25 +128,34 @@ pannellum.viewer('panorama', {
 		"Cam3W": {
             "title": "• Sketch",
             "hfov": 120, //50-120
-            "pitch": 2,
-            "yaw": 0,
+            "pitch": -6,
+            "yaw": 118,
             "type": "equirectangular",
             "panorama": "https://borelbox.github.io/site/VR360/img/Pan4K-Cam3-NCYT.jpg",
             // "ignoreGPanoXMP": true,
             "hotSpots": [
                 {
-                    "pitch": 0,
+                    "pitch": -80,
                     "yaw": 0,
                     "type": "scene",
-                    "text": "Cam1W",
+                    "text": "Go Color",
+                    "sceneId": "Cam3C",
+                    "targetPitch": "same",
+                    "targetYaw": "same",
+                },
+                {
+                    "pitch": 4,
+                    "yaw": 14,
+                    "type": "scene",
+                    "text": "Cam 1",
                     "sceneId": "Cam1W",
                 },
                 {
-                    "pitch": 0,
-                    "yaw": 100,
+                    "pitch": -8,
+                    "yaw": 120,
                     "type": "scene",
-                    "text": "Cam2W",
-                    "sceneId": "Cam2W",
+                    "text": "Cam 5",
+                    "sceneId": "Cam5W",
                 }
             ]
         },
@@ -152,31 +163,26 @@ pannellum.viewer('panorama', {
         "Cam4W": {
             "title": "• Sketch",
             "hfov": 120, //50-120
-            "pitch": 2,
+            "pitch": -9,
             "yaw": 0,
             "type": "equirectangular",
             "panorama": "https://borelbox.github.io/site/VR360/img/Pan4K-Cam4-NCYT.jpg",
-            // "ignoreGPanoXMP": true,
+            "ignoreGPanoXMP": true,
             "hotSpots": [
                 {
-                    "pitch": 0,
+                    "pitch": -80,
                     "yaw": 0,
                     "type": "scene",
-                    "text": "Cam2W",
-                    "sceneId": "Cam2W",
+                    "text": "Go Color",
+                    "sceneId": "Cam4C",
+                    "targetPitch": "same",
+                    "targetYaw": "same",
                 },
                 {
-                    "pitch": 0,
-                    "yaw": 100,
+                    "pitch": -8,
+                    "yaw": -8,
                     "type": "scene",
-                    "text": "Cam3W",
-                    "sceneId": "Cam3W",
-                },
-                {
-                    "pitch": 0,
-                    "yaw": 200,
-                    "type": "scene",
-                    "text": "Cam5W",
+                    "text": "Cam 5",
                     "sceneId": "Cam5W",
                 }
             ]
@@ -185,35 +191,240 @@ pannellum.viewer('panorama', {
         "Cam5W": {
             "title": "• Sketch",
             "hfov": 120, //50-120
-            "pitch": 2,
+            "pitch": 8,
             "yaw": 0,
             "type": "equirectangular",
             "panorama": "https://borelbox.github.io/site/VR360/img/Pan4K-Cam5-NCYT.jpg",
             // "ignoreGPanoXMP": true,
             "hotSpots": [
                 {
-                    "pitch": 0,
+                    "pitch": -80,
                     "yaw": 0,
                     "type": "scene",
-                    "text": "Cam2W",
+                    "text": "Go Color",
+                    "sceneId": "Cam5C",
+                    "targetPitch": "same",
+                    "targetYaw": "same",
+                },
+                {
+                    "pitch": -11,
+                    "yaw": 0,
+                    "type": "scene",
+                    "text": "Cam 2",
                     "sceneId": "Cam2W",
                 },
                 {
-                    "pitch": 0,
-                    "yaw": 100,
+                    "pitch": 5,
+                    "yaw": -90,
                     "type": "scene",
-                    "text": "Cam3W",
+                    "text": "Cam 3",
                     "sceneId": "Cam3W",
                 },
                 {
-                    "pitch": 0,
-                    "yaw": 200,
+                    "pitch": 8,
+                    "yaw": 90,
                     "type": "scene",
-                    "text": "Cam4W",
+                    "text": "Cam 4",
                     "sceneId": "Cam4W",
                 }
             ]
-        }
+        },
+        // ········································
+        "Cam1C": {
+            "title": "• Sketch",
+            "hfov": 120, //50-120
+            "pitch": 2,
+            "yaw": 0,
+            "type": "equirectangular",
+            "panorama": "https://borelbox.github.io/site/VR360/img/Pan4K-Cam1-YCYT.jpg",
+            "ignoreGPanoXMP": true,
+            "hotSpots": [
+                {
+                    "pitch": -80,
+                    "yaw": 0,
+                    "type": "scene",
+                    "text": "Go Sketchy",
+                    "sceneId": "Cam1W",
+                    "targetPitch": "same",
+                    "targetYaw": "same",
+                },
+                {
+                    "pitch": 7,
+                    "yaw": 5,
+                    "type": "info",
+                    "text": "borelbox@gmail.com",
+                    "URL": "mailto:borelbox@gmail.com",
+                },
+                {
+                    "pitch": 12,
+                    "yaw": 158,
+                    "type": "scene",
+                    "text": "Cam 2",
+                    "sceneId": "Cam2C",
+                },
+                {
+                    "pitch": 6,
+                    "yaw": 242,
+                    "type": "scene",
+                    "text": "Cam 3",
+                    "sceneId": "Cam3C",
+                }
+            ]
+        },
+
+        "Cam2C": {
+            "title": "• Sketch",
+            "hfov": 120, //50-120
+            "pitch": 2,
+            "yaw": 180,
+            "type": "equirectangular",
+            "panorama": "https://borelbox.github.io/site/VR360/img/Pan4K-Cam2-YCYT.jpg",
+            "ignoreGPanoXMP": true,
+            "hotSpots": [
+                {
+                    "pitch": -80,
+                    "yaw": 0,
+                    "type": "scene",
+                    "text": "Go Color",
+                    "sceneId": "Cam2W",
+                    "targetPitch": "same",
+                    "targetYaw": "same",
+                },
+                {
+                    "pitch": -10,
+                    "yaw": 170,
+                    "type": "scene",
+                    "text": "Cam 1",
+                    "sceneId": "Cam1C",
+                },
+                {
+                    "pitch": 5,
+                    "yaw": 85,
+                    "type": "scene",
+                    "text": "Cam 3",
+                    "sceneId": "Cam3C",
+                },
+                {
+                    "pitch": 5,
+                    "yaw": -79,
+                    "type": "scene",
+                    "text": "Cam 4",
+                    "sceneId": "Cam4C",
+                },
+                {
+                    "pitch": -10,
+                    "yaw": 0,
+                    "type": "scene",
+                    "text": "Cam 5",
+                    "sceneId": "Cam5C",
+                }
+            ]
+        },
+        
+        "Cam3C": {
+            "title": "• Sketch",
+            "hfov": 120, //50-120
+            "pitch": -6,
+            "yaw": 118,
+            "type": "equirectangular",
+            "panorama": "https://borelbox.github.io/site/VR360/img/Pan4K-Cam3-YCYT.jpg",
+            // "ignoreGPanoXMP": true,
+            "hotSpots": [
+                {
+                    "pitch": -80,
+                    "yaw": 0,
+                    "type": "scene",
+                    "text": "Go Color",
+                    "sceneId": "Cam3W",
+                    "targetPitch": "same",
+                    "targetYaw": "same",
+                },
+                {
+                    "pitch": 4,
+                    "yaw": 14,
+                    "type": "scene",
+                    "text": "Cam 1",
+                    "sceneId": "Cam1C",
+                },
+                {
+                    "pitch": -8,
+                    "yaw": 120,
+                    "type": "scene",
+                    "text": "Cam 5",
+                    "sceneId": "Cam5C",
+                }
+            ]
+        },
+
+        "Cam4C": {
+            "title": "• Sketch",
+            "hfov": 120, //50-120
+            "pitch": -9,
+            "yaw": 0,
+            "type": "equirectangular",
+            "panorama": "https://borelbox.github.io/site/VR360/img/Pan4K-Cam4-YCYT.jpg",
+            "ignoreGPanoXMP": true,
+            "hotSpots": [
+                {
+                    "pitch": -80,
+                    "yaw": 0,
+                    "type": "scene",
+                    "text": "Go Color",
+                    "sceneId": "Cam4W",
+                    "targetPitch": "same",
+                    "targetYaw": "same",
+                },
+                {
+                    "pitch": -8,
+                    "yaw": -8,
+                    "type": "scene",
+                    "text": "Cam 5",
+                    "sceneId": "Cam5C",
+                }
+            ]
+        },
+
+        "Cam5C": {
+            "title": "• Sketch",
+            "hfov": 120, //50-120
+            "pitch": 8,
+            "yaw": 0,
+            "type": "equirectangular",
+            "panorama": "https://borelbox.github.io/site/VR360/img/Pan4K-Cam5-YCYT.jpg",
+            // "ignoreGPanoXMP": true,
+            "hotSpots": [
+                {
+                    "pitch": -80,
+                    "yaw": 0,
+                    "type": "scene",
+                    "text": "Go Color",
+                    "sceneId": "Cam5W",
+                    "targetPitch": "same",
+                    "targetYaw": "same",
+                },
+                {
+                    "pitch": -11,
+                    "yaw": 0,
+                    "type": "scene",
+                    "text": "Cam 2",
+                    "sceneId": "Cam2C",
+                },
+                {
+                    "pitch": 5,
+                    "yaw": -90,
+                    "type": "scene",
+                    "text": "Cam 3",
+                    "sceneId": "Cam3C",
+                },
+                {
+                    "pitch": 8,
+                    "yaw": 90,
+                    "type": "scene",
+                    "text": "Cam 4",
+                    "sceneId": "Cam4C",
+                }
+            ]
+        },
     }
 });
 </script>

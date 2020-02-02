@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <link href="../vrview-master/style.css" rel="stylesheet" type="text/css">
+    <script src="https://storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
+    <style>
+        
+    </style>
+</head>
+<body>
+
+<div id='vrview'></div>
+
+<script>
+window.addEventListener('load', onVrViewLoad);
+
+function onVrViewLoad() {
+  // Selector '#vrview' finds element with id 'vrview'.
+  var vrView = new VRView.Player('#vrview', {
+    image: "https://borelbox.github.io/site/VR360/img/Pan4K-Cam1-NCYT.jpg",
+    is_stereo: false,
+    default_yaw: 20,
+    is_autopan_off: false,
+    width: 800,
+    height: 400,
+    // margin: auto,
+  });
+}
+</script>
+
+</body>
+</html>

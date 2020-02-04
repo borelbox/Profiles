@@ -35,12 +35,12 @@ pannellum.viewer('panorama', {
 
     "scenes": {
         "Cam1W": {
-            "title": "HBO-GOT",
+            "title": "CAME",
             "hfov": 120, //50-120
-            "pitch": -5,
-            "yaw": -40,
+            "pitch": 2,
+            "yaw": 0,
             "type": "equirectangular",
-            "panorama": "https://borelbox.github.io/site/VR360/img/GOT-Pan4k-C1-NCYT.jpg",
+            "panorama": "https://borelbox.github.io/site/VR360/img/CAME-Pan4K-C1-NCYTa.jpg",
             "ignoreGPanoXMP": true,
             "hotSpots": [
                 {
@@ -66,17 +66,58 @@ pannellum.viewer('panorama', {
                     "text": "borelbox@gmail.com",
                     "URL": "mailto:borelbox@gmail.com",
                 },
+                {
+                    "pitch": 12,
+                    "yaw": 158,
+                    "type": "scene",
+                    "text": "2",
+                    "sceneId": "Cam2W",
+                },
             ]
         },
 
+        "Cam2W": {
+            "title": "CAME",
+            "hfov": 120, //50-120
+            "pitch": 2,
+            "yaw": 230,
+            "type": "equirectangular",
+            "panorama": "https://borelbox.github.io/site/VR360/img/CAME-Pan4K-C2-NCYTa.jpg",
+            "ignoreGPanoXMP": true,
+            "hotSpots": [
+                {
+                    "pitch": 0,
+                    "yaw": 45,
+                    "type": "scene",
+                    "text": "Go Color",
+                    "sceneId": "Cam2C",
+                    "targetPitch": "same",
+                    "targetYaw": "same",
+                },
+                {
+                    "pitch": -90,
+                    "yaw": 0,
+                    "type": "info",
+                    "text": "borelbox@gmail.com",
+                    "URL": "mailto:borelbox@gmail.com",
+                },
+                {
+                    "pitch": -10,
+                    "yaw": 170,
+                    "type": "scene",
+                    "text": "1",
+                    "sceneId": "Cam1W",
+                },
+            ]
+        },
         // ········································
         "Cam1C": {
-            "title": "HBO-GOT",
+            "title": "CAME",
             "hfov": 120, //50-120
-            "pitch": -5,
-            "yaw": -40,
+            "pitch": 2,
+            "yaw": 0,
             "type": "equirectangular",
-            "panorama": "https://borelbox.github.io/site/VR360/img/GOT-Pan4k-C1-YCYT.jpg",
+            "panorama": "https://borelbox.github.io/site/VR360/img/CAME-Pan4K-C1-YCYT.jpg",
             "ignoreGPanoXMP": true,
             "hotSpots": [
                 {
@@ -101,6 +142,48 @@ pannellum.viewer('panorama', {
                     "type": "info",
                     "text": "borelbox@gmail.com",
                     "URL": "mailto:borelbox@gmail.com",
+                },
+                {
+                    "pitch": 12,
+                    "yaw": 158,
+                    "type": "scene",
+                    "text": "2",
+                    "sceneId": "Cam2C",
+                },
+            ]
+        },
+
+        "Cam2C": {
+            "title": "CAME",
+            "hfov": 120, //50-120
+            "pitch": 2,
+            "yaw": 230,
+            "type": "equirectangular",
+            "panorama": "https://borelbox.github.io/site/VR360/img/CAME-Pan4K-C2-YCYT.jpg",
+            "ignoreGPanoXMP": true,
+            "hotSpots": [
+                {
+                    "pitch": 0,
+                    "yaw": 45,
+                    "type": "scene",
+                    "text": "Go Sketchy",
+                    "sceneId": "Cam2W",
+                    "targetPitch": "same",
+                    "targetYaw": "same",
+                },
+                {
+                    "pitch": -90,
+                    "yaw": 0,
+                    "type": "info",
+                    "text": "borelbox@gmail.com",
+                    "URL": "mailto:borelbox@gmail.com",
+                },
+                {
+                    "pitch": -10,
+                    "yaw": 170,
+                    "type": "scene",
+                    "text": "1",
+                    "sceneId": "Cam1C",
                 },
             ]
         },

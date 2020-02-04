@@ -22,7 +22,7 @@
 <script>
 pannellum.viewer('panorama', {   
     "default": {
-        "firstScene": "Cam2W",
+        "firstScene": "Cam1W",
         "author": "Guille Borel",
         "sceneFadeDuration": 2000,
         "showFullscreenCtrl": true,
@@ -30,28 +30,28 @@ pannellum.viewer('panorama', {
         "autoRotate": -1,
         "autoRotateInactivityDelay": 10000,
         "orientationOnByDefault": true,
-        // "fallback": "https://photos.google.com/share/AF1QipNh62ARNOdNhmuPTIa207qs7vQvRttzDJawlwTiHGCp6kssKEHmA1fq58_eLdTh-g/photo/AF1QipNhvFIBeRc0Vq4-18mcA9-FOP9bVm8c1SKeH-U6?key=eFZtQUJVYWhQWWViV29ZTUhmTnk2T2x6SElfSFV3",
+        "fallback": "https://photos.app.goo.gl/BaDL1AaVXobPPAqA9",
     },
 
     "scenes": {
         "Cam1W": {
             "title": "HBO-GOT",
             "hfov": 120, //50-120
-            "pitch": 2,
-            "yaw": 0,
+            "pitch": -5,
+            "yaw": -34,
             "type": "equirectangular",
             "panorama": "https://borelbox.github.io/site/VR360/img/GOT-Pan4k-C1-NCYT.jpg",
             "ignoreGPanoXMP": true,
             "hotSpots": [
-                // {
-                //     "pitch": 0,
-                //     "yaw": 45,
-                //     "type": "scene",
-                //     "text": "Go Color",
-                //     "sceneId": "Cam1C",
-                //     "targetPitch": "same",
-                //     "targetYaw": "same",
-                // },
+                {
+                    "pitch": 7,
+                    "yaw": 10,
+                    "type": "scene",
+                    "text": "Go Color",
+                    "sceneId": "Cam1C",
+                    "targetPitch": "same",
+                    "targetYaw": "same",
+                },
                 {
                     "pitch": 7,
                     "yaw": 5,
@@ -73,6 +73,13 @@ pannellum.viewer('panorama', {
                     "text": "2",
                     "sceneId": "Cam2W",
                 },
+                {
+                    "pitch": 0,
+                    "yaw": -77,
+                    "type": "scene",
+                    "text": "3",
+                    "sceneId": "Cam3W",
+                },
             ]
         },
 
@@ -80,20 +87,20 @@ pannellum.viewer('panorama', {
             "title": "HBO-GOT",
             "hfov": 120, //50-120
             "pitch": 2,
-            "yaw": 230,
+            "yaw": -190,
             "type": "equirectangular",
             "panorama": "https://borelbox.github.io/site/VR360/img/GOT-Pan4k-C2-NCYT.jpg",
             "ignoreGPanoXMP": true,
             "hotSpots": [
-                // {
-                //     "pitch": 0,
-                //     "yaw": 45,
-                //     "type": "scene",
-                //     "text": "Go Color",
-                //     "sceneId": "Cam2C",
-                //     "targetPitch": "same",
-                //     "targetYaw": "same",
-                // },
+                {
+                    "pitch": 7,
+                    "yaw": -87,
+                    "type": "scene",
+                    "text": "Go Color",
+                    "sceneId": "Cam2C",
+                    "targetPitch": "same",
+                    "targetYaw": "same",
+                },
                 {
                     "pitch": -90,
                     "yaw": 0,
@@ -128,21 +135,21 @@ pannellum.viewer('panorama', {
 		"Cam3W": {
             "title": "HBO-GOT",
             "hfov": 120, //50-120
-            "pitch": -6,
-            "yaw": 65,
+            "pitch": -15,
+            "yaw": -60,
             "type": "equirectangular",
             "panorama": "https://borelbox.github.io/site/VR360/img/GOT-Pan4k-C3-NCYT.jpg",
             "ignoreGPanoXMP": true,
             "hotSpots": [
-                // {
-                //     "pitch": 0,
-                //     "yaw": 45,
-                //     "type": "scene",
-                //     "text": "Go Color",
-                //     "sceneId": "Cam3C",
-                //     "targetPitch": "same",
-                //     "targetYaw": "same",
-                // },
+                {
+                    "pitch": 0,
+                    "yaw": -72,
+                    "type": "scene",
+                    "text": "Go Color",
+                    "sceneId": "Cam3C",
+                    "targetPitch": "same",
+                    "targetYaw": "same",
+                },
                 {
                     "pitch": -90,
                     "yaw": 0,
@@ -151,17 +158,24 @@ pannellum.viewer('panorama', {
                     "URL": "mailto:borelbox@gmail.com",
                 },
                 {
-                    "pitch": 0,
-                    "yaw": 90,
+                    "pitch": 1,
+                    "yaw": 25,
                     "type": "scene",
                     "text": "1",
+                    "sceneId": "Cam1W",
+                },
+                {
+                    "pitch": -5,
+                    "yaw": 0,
+                    "type": "scene",
+                    "text": "2",
                     "sceneId": "Cam2W",
                 },
                 {
-                    "pitch": 0,
-                    "yaw": -90,
+                    "pitch": -24,
+                    "yaw": -95,
                     "type": "scene",
-                    "text": "5",
+                    "text": "4",
                     "sceneId": "Cam4W",
                 }
             ]
@@ -170,21 +184,21 @@ pannellum.viewer('panorama', {
         "Cam4W": {
             "title": "HBO-GOT",
             "hfov": 120, //50-120
-            "pitch": -9,
-            "yaw": -30,
+            "pitch": -5,
+            "yaw": -10,
             "type": "equirectangular",
             "panorama": "https://borelbox.github.io/site/VR360/img/GOT-Pan4k-C4-NCYT.jpg",
             "ignoreGPanoXMP": true,
             "hotSpots": [
-                // {
-                //     "pitch": 0,
-                //     "yaw": 45,
-                //     "type": "scene",
-                //     "text": "Go Color",
-                //     "sceneId": "Cam4C",
-                //     "targetPitch": "same",
-                //     "targetYaw": "same",
-                // },
+                {
+                    "pitch": -15,
+                    "yaw": 30,
+                    "type": "scene",
+                    "text": "Go Color",
+                    "sceneId": "Cam4C",
+                    "targetPitch": "same",
+                    "targetYaw": "same",
+                },
                 {
                     "pitch": -90,
                     "yaw": 0,
@@ -194,21 +208,209 @@ pannellum.viewer('panorama', {
                 },
                 {
                     "pitch": 0,
-                    "yaw": 10,
+                    "yaw": 0,
                     "type": "scene",
-                    "text": "5",
+                    "text": "2",
                     "sceneId": "Cam2W",
                 },
                 {
-                    "pitch": 0,
-                    "yaw": 90,
+                    "pitch": 15,
+                    "yaw": 60,
                     "type": "scene",
-                    "text": "5",
+                    "text": "3",
                     "sceneId": "Cam3W",
                 },
             ]
         },
         // ········································
+        "Cam1C": {
+            "title": "HBO-GOT",
+            "hfov": 120, //50-120
+            "pitch": -5,
+            "yaw": -34,
+            "type": "equirectangular",
+            "panorama": "https://borelbox.github.io/site/VR360/img/GOT-Pan4k-C1-YCYT.jpg",
+            "ignoreGPanoXMP": true,
+            "hotSpots": [
+                {
+                    "pitch": 7,
+                    "yaw": 10,
+                    "type": "scene",
+                    "text": "Go Sketchy",
+                    "sceneId": "Cam1W",
+                    "targetPitch": "same",
+                    "targetYaw": "same",
+                },
+                {
+                    "pitch": 7,
+                    "yaw": 5,
+                    "type": "info",
+                    "text": "borelbox@gmail.com",
+                    "URL": "mailto:borelbox@gmail.com",
+                },
+                {
+                    "pitch": -90,
+                    "yaw": 0,
+                    "type": "info",
+                    "text": "borelbox@gmail.com",
+                    "URL": "mailto:borelbox@gmail.com",
+                },
+                {
+                    "pitch": -6,
+                    "yaw": -60,
+                    "type": "scene",
+                    "text": "2",
+                    "sceneId": "Cam2C",
+                },
+                {
+                    "pitch": 0,
+                    "yaw": -77,
+                    "type": "scene",
+                    "text": "3",
+                    "sceneId": "Cam3C",
+                },
+            ]
+        },
+
+        "Cam2C": {
+            "title": "HBO-GOT",
+            "hfov": 120, //50-120
+            "pitch": 2,
+            "yaw": -190,
+            "type": "equirectangular",
+            "panorama": "https://borelbox.github.io/site/VR360/img/GOT-Pan4k-C2-YCYT.jpg",
+            "ignoreGPanoXMP": true,
+            "hotSpots": [
+                {
+                    "pitch": 7,
+                    "yaw": -87,
+                    "type": "scene",
+                    "text": "Go Sketchy",
+                    "sceneId": "Cam2W",
+                    "targetPitch": "same",
+                    "targetYaw": "same",
+                },
+                {
+                    "pitch": -90,
+                    "yaw": 0,
+                    "type": "info",
+                    "text": "borelbox@gmail.com",
+                    "URL": "mailto:borelbox@gmail.com",
+                },
+                {
+                    "pitch": 5,
+                    "yaw": 18,
+                    "type": "scene",
+                    "text": "1",
+                    "sceneId": "Cam1C",
+                },
+                {
+                    "pitch": 4,
+                    "yaw": 165,
+                    "type": "scene",
+                    "text": "3",
+                    "sceneId": "Cam3C",
+                },
+                {
+                    "pitch": -5,
+                    "yaw": -167,
+                    "type": "scene",
+                    "text": "4",
+                    "sceneId": "Cam4C",
+                },
+            ]
+        },
+		
+		"Cam3C": {
+            "title": "HBO-GOT",
+            "hfov": 120, //50-120
+            "pitch": -15,
+            "yaw": -60,
+            "type": "equirectangular",
+            "panorama": "https://borelbox.github.io/site/VR360/img/GOT-Pan4k-C3-YCYT.jpg",
+            "ignoreGPanoXMP": true,
+            "hotSpots": [
+                {
+                    "pitch": 0,
+                    "yaw": -72,
+                    "type": "scene",
+                    "text": "Go Sketchy",
+                    "sceneId": "Cam3W",
+                    "targetPitch": "same",
+                    "targetYaw": "same",
+                },
+                {
+                    "pitch": -90,
+                    "yaw": 0,
+                    "type": "info",
+                    "text": "borelbox@gmail.com",
+                    "URL": "mailto:borelbox@gmail.com",
+                },
+                {
+                    "pitch": 1,
+                    "yaw": 25,
+                    "type": "scene",
+                    "text": "1",
+                    "sceneId": "Cam1C",
+                },
+                {
+                    "pitch": -5,
+                    "yaw": 0,
+                    "type": "scene",
+                    "text": "2",
+                    "sceneId": "Cam2C",
+                },
+                {
+                    "pitch": -24,
+                    "yaw": -95,
+                    "type": "scene",
+                    "text": "4",
+                    "sceneId": "Cam4C",
+                }
+            ]
+        },
+
+        "Cam4C": {
+            "title": "HBO-GOT",
+            "hfov": 120, //50-120
+            "pitch": -5,
+            "yaw": -10,
+            "type": "equirectangular",
+            "panorama": "https://borelbox.github.io/site/VR360/img/GOT-Pan4k-C4-YCYT.jpg",
+            "ignoreGPanoXMP": true,
+            "hotSpots": [
+                {
+                    "pitch": -15,
+                    "yaw": 30,
+                    "type": "scene",
+                    "text": "Go Sketchy",
+                    "sceneId": "Cam4W",
+                    "targetPitch": "same",
+                    "targetYaw": "same",
+                },
+                {
+                    "pitch": -90,
+                    "yaw": 0,
+                    "type": "info",
+                    "text": "borelbox@gmail.com",
+                    "URL": "mailto:borelbox@gmail.com",
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 0,
+                    "type": "scene",
+                    "text": "2",
+                    "sceneId": "Cam2C",
+                },
+                {
+                    "pitch": 15,
+                    "yaw": 60,
+                    "type": "scene",
+                    "text": "3",
+                    "sceneId": "Cam3C",
+                },
+            ]
+        },
     }
 });
 </script>

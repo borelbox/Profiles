@@ -22,7 +22,7 @@
 <script>
 pannellum.viewer('panorama', {   
     "default": {
-        "firstScene": "Cam1W",
+        "firstScene": "Cam2W",
         "author": "Guille Borel",
         "sceneFadeDuration": 2000,
         "showFullscreenCtrl": true,
@@ -30,22 +30,22 @@ pannellum.viewer('panorama', {
         "autoRotate": -1,
         "autoRotateInactivityDelay": 10000,
         "orientationOnByDefault": true,
-        // "fallback": "https://photos.google.com/share/AF1QipNh62ARNOdNhmuPTIa207qs7vQvRttzDJawlwTiHGCp6kssKEHmA1fq58_eLdTh-g/photo/AF1QipNhvFIBeRc0Vq4-18mcA9-FOP9bVm8c1SKeH-U6?key=eFZtQUJVYWhQWWViV29ZTUhmTnk2T2x6SElfSFV3",
+        "fallback": "https://photos.app.goo.gl/rLPPHgTTG7vNS2x19",
     },
 
     "scenes": {
         "Cam1W": {
             "title": "CAME",
             "hfov": 120, //50-120
-            "pitch": 2,
-            "yaw": 0,
+            "pitch": 10,
+            "yaw": -40,
             "type": "equirectangular",
             "panorama": "https://borelbox.github.io/site/VR360/img/CAME-Pan4k-C1-NCYTa.jpg",
             "ignoreGPanoXMP": true,
             "hotSpots": [
                 {
-                    "pitch": 0,
-                    "yaw": 45,
+                    "pitch": -8,
+                    "yaw": 0,
                     "type": "scene",
                     "text": "Go Color",
                     "sceneId": "Cam1C",
@@ -53,41 +53,33 @@ pannellum.viewer('panorama', {
                     "targetYaw": "same",
                 },
                 {
-                    "pitch": 7,
-                    "yaw": 5,
-                    "type": "info",
-                    "text": "borelbox@gmail.com",
-                    "URL": "mailto:borelbox@gmail.com",
-                },
-                {
-                    "pitch": -90,
+                    "pitch": 3,
                     "yaw": 0,
                     "type": "info",
                     "text": "borelbox@gmail.com",
                     "URL": "mailto:borelbox@gmail.com",
                 },
                 {
-                    "pitch": 12,
-                    "yaw": 158,
+                    "pitch": -15,
+                    "yaw": 0,
                     "type": "scene",
                     "text": "2",
                     "sceneId": "Cam2W",
                 },
             ]
         },
-
         "Cam2W": {
             "title": "CAME",
             "hfov": 120, //50-120
-            "pitch": 2,
-            "yaw": 230,
+            "pitch": -10,
+            "yaw": -30,
             "type": "equirectangular",
             "panorama": "https://borelbox.github.io/site/VR360/img/CAME-Pan4k-C2-NCYTa.jpg",
             "ignoreGPanoXMP": true,
             "hotSpots": [
                 {
-                    "pitch": 0,
-                    "yaw": 45,
+                    "pitch": -22,
+                    "yaw": 0,
                     "type": "scene",
                     "text": "Go Color",
                     "sceneId": "Cam2C",
@@ -95,6 +87,13 @@ pannellum.viewer('panorama', {
                     "targetYaw": "same",
                 },
                 {
+                    "pitch": -4,
+                    "yaw": 0,
+                    "type": "info",
+                    "text": "borelbox@gmail.com",
+                    "URL": "mailto:borelbox@gmail.com",
+                },
+                {
                     "pitch": -90,
                     "yaw": 0,
                     "type": "info",
@@ -102,8 +101,8 @@ pannellum.viewer('panorama', {
                     "URL": "mailto:borelbox@gmail.com",
                 },
                 {
-                    "pitch": -10,
-                    "yaw": 170,
+                    "pitch": -30,
+                    "yaw": 180,
                     "type": "scene",
                     "text": "1",
                     "sceneId": "Cam1W",
@@ -111,6 +110,81 @@ pannellum.viewer('panorama', {
             ]
         },
         // ········································
+        "Cam1C": {
+            "title": "CAME",
+            "hfov": 120, //50-120
+            "pitch": 10,
+            "yaw": -40,
+            "type": "equirectangular",
+            "panorama": "https://borelbox.github.io/site/VR360/img/CAME-Pan4k-C1-YCYT.jpg",
+            "ignoreGPanoXMP": true,
+            "hotSpots": [
+                {
+                    "pitch": -8,
+                    "yaw": 0,
+                    "type": "scene",
+                    "text": "Go Color",
+                    "sceneId": "Cam1W",
+                    "targetPitch": "same",
+                    "targetYaw": "same",
+                },
+                {
+                    "pitch": 3,
+                    "yaw": 0,
+                    "type": "info",
+                    "text": "borelbox@gmail.com",
+                    "URL": "mailto:borelbox@gmail.com",
+                },
+                {
+                    "pitch": -15,
+                    "yaw": 0,
+                    "type": "scene",
+                    "text": "2",
+                    "sceneId": "Cam2C",
+                },
+            ]
+        },
+        "Cam2C": {
+            "title": "CAME",
+            "hfov": 120, //50-120
+            "pitch": -10,
+            "yaw": -30,
+            "type": "equirectangular",
+            "panorama": "https://borelbox.github.io/site/VR360/img/CAME-Pan4k-C2-YCYT.jpg",
+            "ignoreGPanoXMP": true,
+            "hotSpots": [
+                {
+                    "pitch": -22,
+                    "yaw": 0,
+                    "type": "scene",
+                    "text": "Go Color",
+                    "sceneId": "Cam2W",
+                    "targetPitch": "same",
+                    "targetYaw": "same",
+                },
+                {
+                    "pitch": -4,
+                    "yaw": 0,
+                    "type": "info",
+                    "text": "borelbox@gmail.com",
+                    "URL": "mailto:borelbox@gmail.com",
+                },
+                {
+                    "pitch": -90,
+                    "yaw": 0,
+                    "type": "info",
+                    "text": "borelbox@gmail.com",
+                    "URL": "mailto:borelbox@gmail.com",
+                },
+                {
+                    "pitch": -30,
+                    "yaw": 180,
+                    "type": "scene",
+                    "text": "1",
+                    "sceneId": "Cam1C",
+                },
+            ]
+        },
     }
 });
 </script>
